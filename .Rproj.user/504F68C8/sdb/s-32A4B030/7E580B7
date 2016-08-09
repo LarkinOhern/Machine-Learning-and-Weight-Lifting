@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "library(dplyr)\nlibrary(ggplot2)\n\n###lets get the data\nurl<-\"https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv\"\nfile<-download.file(url, \"trainingdata.csv\")\n\ntrainingdata<-read.csv(\"trainingdata.csv\", header = TRUE)\n\n###lets see what we've got\ndim(trainingdata)\nView(head(trainingdata))\ntable(trainingdata$classe)\nplot(table(trainingdata$classe))\ntable(trainingdata$classe)/length(trainingdata$classe)\n",
+    "created" : 1470704188680.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "848000110",
+    "id" : "7E580B7",
+    "lastKnownWriteTime" : 1470704941,
+    "last_content_update" : 1470704941943,
+    "path" : "~/Coursera Work/Practical Machine Learning/EDA on WLE.R",
+    "project_path" : "EDA on WLE.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
